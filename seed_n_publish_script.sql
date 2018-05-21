@@ -2,7 +2,7 @@ set define off
 set verify off
 set serveroutput on size 1000000
 set feedback off
-WHENEVER SQLERROR EXIT SQL.SQLCODE ROLLBACK
+whenever sqlerror exit sql.sqlcode rollback
 
 --application/set_environment
 prompt Seed and Publish application for all languages
